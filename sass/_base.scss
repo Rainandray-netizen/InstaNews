@@ -60,3 +60,12 @@ base:contained within this file are all your resets variables mixins and any uti
         @content;
     }
 }
+
+@keyframes title{
+    0%{
+        height:100vh;
+    }
+    100%{
+        height: 200px;
+    }
+}

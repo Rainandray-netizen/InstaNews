@@ -50,12 +50,14 @@ body{
     text-align:center;
     @include desktop{
         justify-content:flex-start;
+        margin:0px 10px;
     }
 }
  
 .shadowbox{
     background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6));
     flex-basis:100%;
+    padding:10px;
 }
 
 .minidisplay{
@@ -65,15 +67,17 @@ body{
     align-items:center;
     justify-content:center;
     background-color:black;
-    
+    margin:0px 10px;
+    animation:title;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+
     @include tablet{
-        height: 200px;
         flex-direction:row;
-        justify-content:flex-start;
-        
     }
+
     @include desktop{
-        flex-direction:row;
+        justify-content:flex-start
     }
 
     img{
