@@ -172,7 +172,8 @@ body {
   -webkit-animation-duration: 1.5s;
           animation-duration: 1.5s;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards; }
+          animation-fill-mode: forwards;
+  color: white; }
   @media (min-width: 600px) {
     .minidisplay {
       -webkit-box-orient: horizontal;

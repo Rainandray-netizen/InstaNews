@@ -20,12 +20,6 @@ layout: contains all the css that handles the layout, such as the container and 
 .article {
     display: flex;
     align-items:flex-end;
-    // @include tablet{
-    //     flex-basis:100%;
-    // }
-    // @include desktop{
-    //     flex-basis:100%;
-    // }
 }
 
 body{
@@ -71,6 +65,7 @@ body{
     animation:title;
     animation-duration: 1.5s;
     animation-fill-mode: forwards;
+    color:white;
 
     @include tablet{
         flex-direction:row;
@@ -123,12 +118,3 @@ select{
         width:100px;
     }
 }
-
-
-
-// body{
-//     background:purple;
-//     @include desktop{
-//         background-color:green;
-//     }
-// }
