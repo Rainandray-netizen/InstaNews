@@ -1,0 +1,176 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+base:contained within this file are all your resets variables mixins and any utility classes.
+*/
+@font-face {
+  font-family: "opensanslightitalic";
+  src: url("OpenSansLight-Italic.eot");
+  src: url("OpenSansLight-Italic.eot?#iefix") format("embedded-opentype"), url("OpenSansLight-Italic.woff2") format("woff2"), url("OpenSansLight-Italic.woff") format("woff"), url("OpenSansLight-Italic.ttf") format("truetype"), url("OpenSansLight-Italic.svg#OpenSansLight-Italic") format("svg");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "opensanslight";
+  src: url("OpenSans-Light.eot");
+  src: url("OpenSans-Light.eot?#iefix") format("embedded-opentype"), url("OpenSans-Light.woff2") format("woff2"), url("OpenSans-Light.woff") format("woff"), url("OpenSans-Light.ttf") format("truetype"), url("OpenSans-Light.svg#OpenSans-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "opensansbolditalic";
+  src: url("OpenSans-BoldItalic.eot");
+  src: url("OpenSans-BoldItalic.eot?#iefix") format("embedded-opentype"), url("OpenSans-BoldItalic.woff2") format("woff2"), url("OpenSans-BoldItalic.woff") format("woff"), url("OpenSans-BoldItalic.ttf") format("truetype"), url("OpenSans-BoldItalic.svg#OpenSans-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "opensansbold";
+  src: url("OpenSans-Bold.eot");
+  src: url("OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("OpenSans-Bold.woff2") format("woff2"), url("OpenSans-Bold.woff") format("woff"), url("OpenSans-Bold.ttf") format("truetype"), url("OpenSans-Bold.svg#OpenSans-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+/*
+layout: contains all the css that handles the layout, such as the container and any grid systems
+*/
+.articleflex {
+  display: flex;
+  flex-direction: column;
+}
+
+.article {
+  flex-basis: 100%;
+  padding-top: 66.66%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: black;
+  font-size: 16px;
+  font-family: "opensansbold";
+}
+
+.title {
+  font-size: 1.3em;
+  line-height: 1.5;
+  color: white;
+  margin: 2.5%;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+  height: 60px;
+  text-align: center;
+}
+
+.shadowbox {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+  flex-basis: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 550px;
+}
+@media (min-width: 1024px) {
+  header {
+    flex-direction: row;
+  }
+}
+@media (min-width: 600px) {
+  header {
+    flex-direction: row;
+  }
+}
+header p {
+  color: white;
+  margin: 15px;
+}
+header div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+select {
+  width: 100px;
+}
+@media (min-width: 1024px) {
+  select {
+    width: 100px;
+  }
+}
+@media (min-width: 600px) {
+  select {
+    width: 100px;
+  }
+}
+
+/*
+components: contains the css for anything reusable such as buttons
+*/
+
+/*# sourceMappingURL=style.css.map */
