@@ -5,10 +5,10 @@ $(function(){
     $("select").on("change", function(event){
         if($(this).val()!=="NULL"){
             $(".articlegrid").html(`
-                <div class="loading invis">
+                <div class="loading">
                     <img src="images/ajax-loader.gif" alt="loading..."/>
                 </div>`)
-            $(".loading").removeClass("hidden").removeClass("invis")
+            $(".loading").removeClass("hidden")
             $("header").removeClass("headerinit").addClass("minidisplay")
             $section = ($(this).val())
             $.getJSON(`https://api.nytimes.com/svc/topstories/v2/${$section}.json?api-key=TrCrwocaRjaBrbFZ6mGpchM9exLSH5Qs`)
