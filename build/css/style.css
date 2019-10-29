@@ -116,8 +116,8 @@ layout: contains all the css that handles the layout, such as the container and 
 .loading {
   position: fixed;
   z-index: 99;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 60vh;
   background-color: black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -129,8 +129,16 @@ layout: contains all the css that handles the layout, such as the container and 
       -ms-flex-align: center;
           align-items: center; }
   .loading img {
-    width: 300px;
-    height: 300px; }
+    width: 100px;
+    height: 100px; }
+  @media (min-width: 600px) {
+    .loading {
+      width: 100vw;
+      height: 90vh; } }
+  @media (min-width: 1024px) {
+    .loading img {
+      width: 300px;
+      height: 300px; } }
 
 .loading.hidden {
   -webkit-animation: fadeout 1s;
