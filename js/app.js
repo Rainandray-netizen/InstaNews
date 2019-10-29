@@ -4,9 +4,12 @@
 $(function(){
     $("select").on("change", function(event){
         if($(this).val()!=="NULL"){
+            $(".articlegrid").html(`
+                <div class="loading invis">
+                    <img src="images/ajax-loader.gif" alt="loading..."/>
+                </div>`)
             $(".loading").removeClass("hidden").removeClass("invis")
             $("header").removeClass("headerinit").addClass("minidisplay")
-            $(".articlegrid").html("")
             $section = ($(this).val())
             $.getJSON(`https://api.nytimes.com/svc/topstories/v2/${$section}.json?api-key=TrCrwocaRjaBrbFZ6mGpchM9exLSH5Qs`)
             .done(function(data){
