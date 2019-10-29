@@ -9,7 +9,6 @@ $(function(){
             $section = ($(this).val())
             $.getJSON(`https://api.nytimes.com/svc/topstories/v2/${$section}.json?api-key=TrCrwocaRjaBrbFZ6mGpchM9exLSH5Qs`)
             .done(function(data){
-                console.log(data)
                 $title = $(data.results)
                 let counter = 0
                 $.each($title, function(index,value){
