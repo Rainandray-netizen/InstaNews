@@ -1,6 +1,3 @@
-//https://api.nytimes.com/svc/topstories/v2/${$section}.json?api-key=TrCrwocaRjaBrbFZ6mGpchM9exLSH5Qs
-//https://api.nytimes.com/svc/topstories/v2/science.json?api-key=yourkey
-
 $(function(){
     $("select").on("change", function(event){
         if($(this).val()!=="NULL"){
