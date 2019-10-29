@@ -214,7 +214,11 @@ body {
       .minidisplay img {
         height: 60px;
         width: 60px;
-        padding-right: 75px; } }
+        padding-right: 75px; }
+      .minidisplay div {
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start; } }
   @media (min-width: 1024px) {
     .minidisplay {
       -webkit-box-pack: start;
