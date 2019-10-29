@@ -78,3 +78,10 @@ base:contained within this file are all your resets variables mixins and any uti
         height: 125px;
     }
 }
+
+@keyframes fadeout{
+    100%{
+        opacity:0%;
+        visibility:hidden;
+    }
+}

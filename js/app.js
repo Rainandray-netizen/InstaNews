@@ -4,11 +4,13 @@
 $(function(){
     $("select").on("change", function(event){
         if($(this).val()!=="NULL"){
+            $(".loading").removeClass("hidden").removeClass("invis")
             $("header").removeClass("headerinit").addClass("minidisplay")
             $(".articlegrid").html("")
             $section = ($(this).val())
             $.getJSON(`https://api.nytimes.com/svc/topstories/v2/${$section}.json?api-key=TrCrwocaRjaBrbFZ6mGpchM9exLSH5Qs`)
             .done(function(data){
+                $(".loading").addClass("hidden")
                 $title = $(data.results)
                 let counter = 0
                 $.each($title, function(index,value){
@@ -28,6 +30,4 @@ $(function(){
             })
         }
     })
-    
-    
 })
