@@ -76,9 +76,10 @@ body{
     background-color:black;
     height:10vh;
     text-align:center;
+    margin:0px 0px 15px 0px;
     @include desktop{
         justify-content:flex-start;
-        margin:0px 30px;
+        margin:0px 0px 15px 30px;
     }
 }
  
